@@ -139,7 +139,7 @@
 		03530B3B14F09956002E9A5E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Roaring Sky";
 			};
 			buildConfigurationList = 03530B3E14F09956002E9A5E /* Build configuration list for PBXProject "ActionDoubleClick" */;
