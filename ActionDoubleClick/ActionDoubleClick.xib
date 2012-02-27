@@ -115,7 +115,7 @@
 						<object class="NSTextFieldCell" key="NSCell" id="718890471">
 							<int key="NSCellFlags">68288064</int>
 							<int key="NSCellFlags2">272630784</int>
-							<string key="NSContents">On element</string>
+							<string key="NSContents">Element</string>
 							<reference key="NSSupport" ref="508380805"/>
 							<string key="NSCellIdentifier">_NS:3944</string>
 							<reference key="NSControlView" ref="336094419"/>
@@ -200,6 +200,22 @@
 						<reference key="destination" ref="706278899"/>
 					</object>
 					<int key="connectionID">32</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">stopBubblingButton</string>
+						<reference key="source" ref="1001"/>
+						<reference key="destination" ref="928130173"/>
+					</object>
+					<int key="connectionID">33</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">preventDefaultButton</string>
+						<reference key="source" ref="1001"/>
+						<reference key="destination" ref="879569326"/>
+					</object>
+					<int key="connectionID">34</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -346,7 +362,7 @@
 				<reference key="dict.values" ref="1002"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">32</int>
+			<int key="maxID">34</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -360,45 +376,71 @@
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
-					<string key="className">RSTrixiePlugin</string>
-					<string key="superclassName">NSViewController</string>
+					<string key="className">RSActionPlugin</string>
+					<string key="superclassName">RSTrixiePlugin</string>
 					<object class="NSMutableDictionary" key="outlets">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>name</string>
-							<string>rules</string>
+							<string>event</string>
+							<string>preventDefaultButton</string>
 							<string>selectorField</string>
+							<string>stopBubblingButton</string>
 						</object>
 						<object class="NSArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>NSString</string>
-							<string>NSMutableArray</string>
+							<string>NSButton</string>
 							<string>NSTextField</string>
+							<string>NSButton</string>
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>name</string>
-							<string>rules</string>
+							<string>event</string>
+							<string>preventDefaultButton</string>
 							<string>selectorField</string>
+							<string>stopBubblingButton</string>
 						</object>
 						<object class="NSArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBToOneOutletInfo">
-								<string key="name">name</string>
+								<string key="name">event</string>
 								<string key="candidateClassName">NSString</string>
 							</object>
 							<object class="IBToOneOutletInfo">
-								<string key="name">rules</string>
-								<string key="candidateClassName">NSMutableArray</string>
+								<string key="name">preventDefaultButton</string>
+								<string key="candidateClassName">NSButton</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">selectorField</string>
 								<string key="candidateClassName">NSTextField</string>
 							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">stopBubblingButton</string>
+								<string key="candidateClassName">NSButton</string>
+							</object>
+						</object>
+					</object>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/RSActionPlugin.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">RSTrixiePlugin</string>
+					<string key="superclassName">NSViewController</string>
+					<object class="NSMutableDictionary" key="outlets">
+						<string key="NS.key.0">pluginName</string>
+						<string key="NS.object.0">NSString</string>
+					</object>
+					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<string key="NS.key.0">pluginName</string>
+						<object class="IBToOneOutletInfo" key="NS.object.0">
+							<string key="name">pluginName</string>
+							<string key="candidateClassName">NSString</string>
 						</object>
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">

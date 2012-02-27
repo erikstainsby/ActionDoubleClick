@@ -14,13 +14,23 @@
 	
     if( nil != (self = [super initWithNibName:nibNameOrNil	bundle:nibBundleOrNil]))
     {
-		[self setName: @"Double Click"];
+		[self setPluginName: @"DoubleClick"];
+		[self setEvent:@"dblclick"];
     }
     return self;
 }
 
-- (BOOL) hasSelectorField {
-	return YES;
+- (BOOL) hasPreventDefaultButton { 
+	return YES; 
+} 
+- (BOOL) hasStopBubblingButton { 
+	return YES; 
+} 
+- (BOOL) preventDefault {
+	return [[self preventDefaultButton] state];
+}
+- (BOOL) stopBubbling {
+	return [[self stopBubblingButton] state];
 }
 
 @end

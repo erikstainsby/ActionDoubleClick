@@ -83,10 +83,10 @@
 		03530B4D14F09956002E9A5E /* ActionDoubleClick */ = {
 			isa = PBXGroup;
 			children = (
-				03530B4E14F09956002E9A5E /* Supporting Files */,
 				03530BCC14F09B29002E9A5E /* ActionDoubleClick.h */,
 				03530BCD14F09B29002E9A5E /* ActionDoubleClick.m */,
 				03530C3514F0A319002E9A5E /* ActionDoubleClick.xib */,
+				03530B4E14F09956002E9A5E /* Supporting Files */,
 			);
 			path = ActionDoubleClick;
 			sourceTree = "<group>";
